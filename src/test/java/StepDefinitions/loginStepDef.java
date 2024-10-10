@@ -51,4 +51,12 @@ public class loginStepDef extends CommonMethods {
 	}
 	
 	
+	
+	@When("the user enter {string} and {string}")
+	public void the_user_enter_and(String userName, String password) {
+	    lp.login(userName, password);
+  
+	}
+
+	
 }
