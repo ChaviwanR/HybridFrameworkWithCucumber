@@ -7,7 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-			features = "src/test/resources/features"
+			plugin = {"pretty", "html:src/test/resources/reports/cucumber-reports.html"},
+			features = "src/test/resources/featuresFile",
+			glue = "StepDefinitions",
+			dryRun = false,
+			tags = "@smokeTest"
 		
 		
 		
